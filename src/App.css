@@ -30,19 +30,20 @@
   padding: 1rem;
   width:450px;
   border-bottom: 1px solid var(--bg-color);
+  height: 50px;
+  transition: all 0.2s ease-in-out;
 }
 .accordion-item__content{
   transition: all 0.3s ease-in-out;
   display: none;
   margin-top: 10px;
   color: #64748b;
-  opacity: 0;
-  max-height: 0;
 }
-
+.accordion-item.accordion-item__expanded{
+  height:100px;
+  transition: all 0.2s ease-in-out;
+}
 .accordion-item.accordion-item__expanded .accordion-item__content{
   transition: all 0.3s ease-in-out;
   display: block;
-  opacity:1;
-  max-height: 100vh;
 }
