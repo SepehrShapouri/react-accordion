@@ -38,18 +38,21 @@
   display: none;
   margin-top: 10px;
   color: #64748b;
+  width: 440px;
 }
 .accordion-item__header{
   display: flex;
   justify-content: space-between;
 }
 .accordion-item.accordion-item__expanded{
-  height:100px;
+  height:fit-content;
   transition: all 0.2s ease-in-out;
 }
 .accordion-item.accordion-item__expanded .accordion-item__content{
   transition: all 0.3s ease-in-out;
   display: block;
+  overflow-wrap: break-word;
+  margin-left: -7px;
 }
 .accordion-item__chevron{
   width: 1.2rem;
