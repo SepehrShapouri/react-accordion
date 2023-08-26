@@ -39,6 +39,10 @@
   margin-top: 10px;
   color: #64748b;
 }
+.accordion-item__header{
+  display: flex;
+  justify-content: space-between;
+}
 .accordion-item.accordion-item__expanded{
   height:100px;
   transition: all 0.2s ease-in-out;
